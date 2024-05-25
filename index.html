@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <title>Proyecto Final - Ingenieria Economica</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -20,16 +21,15 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Series Uniformes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Series Variables</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Evaluación de Alternativas de Inversión</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -49,1420 +49,1281 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Series Uniformes o Anualidades</h2>
                     <p>Es un conjunto o serie de pagos iguales o uniformes realizados a intervalos iguales de tiempo con un horizonte temporal finito. Es un sistema de amortización muy común en los créditos comerciales, financieros y de vivienda. <br> El término anualidad también se aplica a periodicidades de tiempo diferente a un año como bimensual, mensual, quincenal, etc. Representa un pago, renta, cuota o desembolso de dinero correspondiente por ejemplo al pago de dividendos de una acción, sueldos, cuotas de un crédito otorgado por un banco, pago por alquiler de una vivienda o al pago por un servicio de suscripción de televisión por cable, cuyo monto se paga y amortiza en períodos uniformes de tiempo. <br> 
+                        <h3>Valor Futuro en Series Uniformes o Anualidad Vencida:</h3>
+                        <p>
+                            En el ámbito financiero, se emplean las fórmulas relacionadas con el Valor Futuro en Series Uniformes o Anualidades Vencidas para determinar el valor futuro de pagos iguales realizados al final de cada período, asumiendo una tasa de interés constante. Estas fórmulas resultan útiles cuando se desea calcular el valor acumulado de pagos periódicos en situaciones que implican planificación para el futuro.
+                        </p>
                         <h5>Formulas relacionadas con Valor Futuro en Series Uniformes o Anualidad Vencida:</h5>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>VF</mi>
-                  <mo>=</mo>
-                  <mi>A</mi>
-                  <mo>×</mo>
-                  <mfrac>
-                    <mrow>
-                      <mo stretchy="false">(</mo>
-                      <msup>
-                        <mrow>
-                          <mn>1</mn>
-                          <mo>+</mo>
-                          <mi>i</mi>
-                          <mo stretchy="false">)</mo>
-                        </mrow>
-                        
-                        <mi>n</mi>
-                      </msup>
-                      <mo>-</mo>
-                      <mn>1</mn>
-                      
-                    </mrow>
-                    <mrow>
-                      <mi>i</mi>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>A</mi>
-                  <mo>=</mo>
-                  <mfrac>
-                    <mrow>
-                      <mi>FV</mi>
-                    </mrow>
-                    <mrow>
-                        <mfrac>
+                        <p>
+                            <ul>
+                                <li>VF = Valor Futuro</li>
+                                <li>i = Tasa de interes</li>
+                                <li>n = Numero de periodos</li>
+                                <li>A = Pagos periodico</li>
+                            </ul>
+                        </p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <mrow>
+                            <mi>VF</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
+                            <mo>×</mo>
+                            <mfrac>
+                                <mrow>
                                 <mo stretchy="false">(</mo>
                                 <msup>
-                                  <mrow>
+                                    <mrow>
                                     <mn>1</mn>
                                     <mo>+</mo>
                                     <mi>i</mi>
                                     <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
                                 </msup>
                                 <mo>-</mo>
                                 <mn>1</mn>
                                 
-                              </mrow>
-                              <mrow>
+                                </mrow>
+                                <mrow>
                                 <mi>i</mi>
-                              </mrow>
-                        </mfrac>
-                      
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>n</mi>
-                  <mo>=</mo>
-                  <mfrac>
-                    <mrow>
-                      <mi>Log</mi>
-                      <mo stretchy="false">(</mo>
-                      <mi>VF</mi>
-                      <mo>×</mo>
-                      <mi>i</mi>
-                      <mo>+</mo>
-                      <mi>A</mi>
-                      <mo stretchy="false">)</mo>
-                      <mo>-</mo>
-                      <mi>Log</mi>
-                      <mo stretchy="false">(⁡</mo>
-                      <mi>A</mi>
-                      <mo stretchy="false">)</mo>
-                    </mrow>
-                    <mrow>
-                      <mi>Log</mi>
-                      <mo>⁡</mo>
-                      <mo stretchy="false">(</mo>
-                      <mn>1</mn>
-                      <mo>+</mo>
-                      <mi>i</mi>
-                      <mo stretchy="false">)</mo>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math> <br><br>
-              <h5>Formula relacionadas con Valor Presente en Series Uniformes o Anualidad Vencida:</h5>
-              <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>VP</mi>
-                  <mo>=</mo>
-                  <mi>A</mi>
-                  <mo>×</mo>
-                  <mfrac>
-                    <mrow>
-                      <mo stretchy="false">(</mo>
-                      <msup>
-                        <mrow>
-                          <mn>1</mn>
-                          <mo>+</mo>
-                          <mi>i</mi>
-                          <mo stretchy="false">)</mo>
-                        </mrow>
-                        
-                        <mi>n</mi>
-                      </msup>
-                      <mo>-</mo>
-                      <mn>1</mn>
-                      
-                    </mrow>
-                    <mrow>
-                      <mi>i</mi>
-                      <mo>×</mo>
-                      <mo stretchy="false">(</mo>
-                      <msup>
-                        <mrow>
-                          <mn>1</mn>
-                          <mo>+</mo>
-                          <mi>i</mi>
-                          <mo stretchy="false">)</mo>
-                        </mrow>
-                        
-                        <mi>n</mi>
-                      </msup>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <math xmlns="http://www.w3.org/1998/Math/MathML"> 
-                <mrow>
-                  <mi>A</mi>
-                  <mo>=</mo>
-                  <mi>VP</mi>
-                  <mo>×</mo>
-                  <mfrac>
-                    <mrow>
-                        <mi>i</mi>
-                        <mo>×</mo>
-                        <mo stretchy="false">(</mo>
-                        <msup>
-                          <mrow>
-                            <mn>1</mn>
-                            <mo>+</mo>
-                            <mi>i</mi>
-                            <mo stretchy="false">)</mo>
-                          </mrow>
-                          
-                          <mi>n</mi>
-                        </msup>
-                    </mrow>
-                    <mrow>
-                        <mo stretchy="false">(</mo>
-                        <msup>
-                          <mrow>
-                            <mn>1</mn>
-                            <mo>+</mo>
-                            <mi>i</mi>
-                            <mo stretchy="false">)</mo>
-                          </mrow>
-                          
-                          <mi>n</mi>
-                        </msup>
-                        <mo>-</mo>
-                        <mn>1</mn>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>n</mi>
-                  <mo>=</mo>
-                  <mfrac>
-                    <mrow>
-                      <mi>Log</mi>
-                      <mo>⁡</mo>
-                      <mo stretchy="false">(</mo>
-                      <mi>A</mi>
-                      <mo stretchy="false">)</mo>
-                      <mo>-</mo>
-                      <mi>Log</mi>
-                      <mo stretchy="false">(⁡</mo>
-                      <mi>A</mi>
-                      <mo>-</mo>
-                      <mo stretchy="false">(</mo>
-                      <mi>i</mi>
-                      <mo>×</mo>
-                      <mi>VP</mi>
-                      <mo stretchy="false">)</mo>
-                      <mo stretchy="false">)</mo>
-                    </mrow>
-                    <mrow>
-                      <mi>Log</mi>
-                      <mo>⁡</mo>
-                      <mo stretchy="false">(</mo>
-                      <mn>1</mn>
-                      <mo>+</mo>
-                      <mi>i</mi>
-                      <mo stretchy="false">)</mo>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <h5>Formulas relacionadas con Valor Futuro en Series Uniformes o Anualidad Anticipada:</h5>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>VF</mi>
-                  <mo>=</mo>
-                  <mi>A</mi>
-                  <mo>×</mo>
-                  <mo stretchy="false">(</mo>
-                  <mn>1</mn>
-                  <mo>+</mo>
-                  <mi>i</mi>
-                  <mo stretchy="false">)</mo>
-                  <mo>×</mo>
-                  <mfrac>
-                    <mrow>
-                      <mo stretchy="false">(</mo>
-                      <msup>
-                        <mrow>
-                          <mn>1</mn>
-                          <mo>+</mo>
-                          <mi>i</mi>
-                          <mo stretchy="false">)</mo>
-                        </mrow>
-                        
-                        <mi>n</mi>
-                      </msup>
-                      <mo>-</mo>
-                      <mn>1</mn>
-                      
-                    </mrow>
-                    <mrow>
-                      <mi>i</mi>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>A</mi>
-                  <mo>=</mo>
-                  <mfrac>
-                    <mrow>
-                      <mi>VF</mi>
-                    </mrow>
-                    <mrow>
-                        <mo stretchy="false">[</mo>
-                        <mfrac>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <mrow>
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                <mi>FV</mi>
+                                </mrow>
+                                <mrow>
+                                    <mfrac>
+                                        <mrow>
+                                            <mo stretchy="false">(</mo>
+                                            <msup>
+                                            <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                            </mrow>
+                                            
+                                            <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                            
+                                        </mrow>
+                                        <mrow>
+                                            <mi>i</mi>
+                                        </mrow>
+                                    </mfrac>
+                                
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                            <mi>n</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                <mi>Log</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>VF</mi>
+                                <mo>×</mo>
+                                <mi>i</mi>
+                                <mo>+</mo>
+                                <mi>A</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>-</mo>
+                                <mi>Log</mi>
+                                <mo stretchy="false">(⁡</mo>
+                                <mi>A</mi>
+                                <mo stretchy="false">)</mo>
+                                </mrow>
+                                <mrow>
+                                <mi>Log</mi>
+                                <mo>⁡</mo>
                                 <mo stretchy="false">(</mo>
                                 <mn>1</mn>
                                 <mo>+</mo>
                                 <mi>i</mi>
                                 <mo stretchy="false">)</mo>
-                                <mo>×</mo>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                
-                              </mrow>
-                              <mrow>
-                                <mi>i</mi>
-                              </mrow>
-                        </mfrac>
-                        <mo stretchy="false">]</mo>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <h5>Formula relacionadas con Valor Presente en Series Uniformes o Anualidad Anticipada:</h5>
-              <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                  <mi>VP</mi>
-                  <mo>=</mo>
-                  <mi>A</mi>
-                  <mo>×</mo>
-                  <mo stretchy="false">(</mo>
-                  <mn>1</mn>
-                  <mo>+</mo>
-                  <mi>i</mi>
-                  <mo stretchy="false">)</mo>
-                  <mo>×</mo>
-                  <mfrac>
-                    <mrow>
-                      <mo stretchy="false">(</mo>
-                      <msup>
-                        <mrow>
-                          <mn>1</mn>
-                          <mo>+</mo>
-                          <mi>i</mi>
-                          <mo stretchy="false">)</mo>
-                        </mrow>
-                        
-                        <mi>n</mi>
-                      </msup>
-                      <mo>-</mo>
-                      <mn>1</mn>
-                      
-                    </mrow>
-                    <mrow>
-                      <mi>i</mi>
-                      <mo>×</mo>
-                      <mo stretchy="false">(</mo>
-                      <msup>
-                        <mrow>
-                          <mn>1</mn>
-                          <mo>+</mo>
-                          <mi>i</mi>
-                          <mo stretchy="false">)</mo>
-                        </mrow>
-                        
-                        <mi>n</mi>
-                      </msup>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math><br><br>
-              <math xmlns="http://www.w3.org/1998/Math/MathML"
-                <mrow>
-                  <mi>A</mi>
-                  <mo>=</mo>
-                  <mfrac>
-                    <mrow>
-                        <mi>VP</mi>
-                    </mrow>
-                    <mrow>
-                        <mo stretchy="false">(</mo>
-                        <mn>1</mn>
-                        <mo>+</mo>
-                        <mi>i</mi>
-                        <mo stretchy="false">)</mo>
-                        <mo>×</mo>
-                        <mfrac>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math> <br><br>
+                        <h3>Valor Presente en Series Uniformes o Anualidad Vencida:</h3>
+                        <p>
+                            En finanzas, se utilizan fórmulas relacionadas con el Valor Presente en Series Uniformes o Anualidades Vencidas para calcular el valor presente de una serie de pagos iguales realizados al final de cada período, asumiendo una tasa de interés constante. Estas fórmulas sirven para calcular el valor actual de una corriente de pagos futuros.
+                        </p>
+                        <h5>Formulas relacionadas con Valor Presente en Series Uniformes o Anualidad Vencida:</h5>
+                        <p>
+                            <ul>
+                                <li>VP = Valor Presente</li>
+                                <li>i = Tasa de interes</li>
+                                <li>n = Numero de periodos</li>
+                                <li>A = Pagos periodico</li>
+                            </ul>
+                        </p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <mrow>
+                            <mi>VP</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
+                            <mo>×</mo>
+                            <mfrac>
+                                <mrow>
                                 <mo stretchy="false">(</mo>
                                 <msup>
-                                  <mrow>
+                                    <mrow>
                                     <mn>1</mn>
                                     <mo>+</mo>
                                     <mi>i</mi>
                                     <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
                                 </msup>
                                 <mo>-</mo>
                                 <mn>1</mn>
                                 
-                              </mrow>
-                              <mrow>
+                                </mrow>
+                                <mrow>
                                 <mi>i</mi>
                                 <mo>×</mo>
                                 <mo stretchy="false">(</mo>
                                 <msup>
-                                  <mrow>
+                                    <mrow>
                                     <mn>1</mn>
                                     <mo>+</mo>
                                     <mi>i</mi>
                                     <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n - 1</mi>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
                                 </msup>
-                              </mrow>
-                        </mfrac>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-              </math>
-            </p><br>
-            <h4>Series Variables:</h4>
-            <p>Es una serie de flujos de caja (ingresos o egresos) periódicos que aumentan o disminuyen en términos monetarios ($) o en términos relativos (%), para saldar una deuda o para acumular un fondo de ahorro a corto, mediano, largo plazo o a perpetuidad. Se caracterizan por seguir una ley de formación, en donde un flujo de caja puede aumentar o disminuir con relación al flujo de caja anterior, en una cantidad constante monetaria ($) o relativa (%). Es una serie de pagos periódicos que pueden aumentar o disminuir con relación al pago
-            anterior. A la variación en una cantidad constante en pesos, o en un porcentaje se le conoce como Gradiente.
-            <h5>Formulas relacionadas con Gradiente Lineal Creciente</h5>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VP</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML"> 
+                            <mrow>
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mi>VP</mi>
                             <mo>×</mo>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
+                            <mfrac>
+                                <mrow>
                                     <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                    <mo>+</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                            <mo>×</mo>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>n</mi>
-                        </mrow>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                        
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VF</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow> 
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>
-                                  </mrow> 
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                    <mo>+</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>  
-                                </mrow>                       
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>n</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>A</mi>
-                    <mo>=</mo>
-                    <mo stretchy="false">(</mo>
-                    <mi>VF</mi>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow> 
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>
-                                  </mrow> 
-                                </msup>
-                        </mrow>
-                        
-                    </mfrac>
-                    <mo>-</mo>
-                        <mrow>
-                            <mi>n</mi>
-                    <mo stretchy="false">]</mo>
-                    <mo stretchy="false">)</mo>
-                    <mo>/</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>  
-                                </mrow>                       
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><BR></BR>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>C</mi>
-                    <sub>n</sub>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>+</mo>
-                    <mo stretchy="false">(</mo>
-                    <mi>n</mi>
-                    <mo>-</mo>
-                    <mn>1</mn>
-                    <mo stretchy="false">)</mo>
-                    <mo>*</mo>
-                    <mi>G</mi>
-                </mrow>
-            </math><BR></BR>
-            </p>
-            <h5>Formulas relacionadas con Gradiente Lineal Decreciente</h5>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VP</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                            <mo>×</mo>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                            <mo>×</mo>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>n</mi>
-                        </mrow>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                        
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VF</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow> 
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>
-                                  </mrow> 
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>  
-                                </mrow>                       
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>n</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>A</mi>
-                    <mo>=</mo>
-                    <mo stretchy="false">(</mo>
-                    <mi>VF</mi>
-                    <mo>+</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow> 
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>
-                                  </mrow> 
-                                </msup>
-                        </mrow>
-                        
-                    </mfrac>
-                    <mo>-</mo>
-                        <mrow>
-                            <mi>n</mi>
-                    <mo stretchy="false">]</mo>
-                    <mo stretchy="false">)</mo>
-                    <mo>/</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>  
-                                </mrow>                       
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><BR></BR>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>C</mi>
-                    <sub>n</sub>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>-</mo>
-                    <mo stretchy="false">(</mo>
-                    <mi>n</mi>
-                    <mo>-</mo>
-                    <mn>1</mn>
-                    <mo stretchy="false">)</mo>
-                    <mo>*</mo>
-                    <mi>G</mi>
-                </mrow>
-            </math><BR></BR>
-            </p>
-            <h5>Formulas relacionadas con Gradiente Geometrico Creciente</h5>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VP</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>J</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                            <mi>J</mi>
-                            <mo>-</mo>
-                            <mi>i</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VF</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>J</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                            <mi>i</mi>
-                            <mo>-</mo>
-                            <mi>J</mi>
-                            <mo stretchy="false">)</mo>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>A</mi>
-                    <mo>=</mo>
-                    <mi>VF</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                  <mrow>
-                                    <mn>i</mn>
+                                    <mo>×</mo>
+                                    <mo stretchy="false">(</mo>
+                                    <msup>
+                                    <mrow>
+                                        <mn>1</mn>
+                                        <mo>+</mo>
+                                        <mi>i</mi>
+                                        <mo stretchy="false">)</mo>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
+                                    </msup>
+                                </mrow>
+                                <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <msup>
+                                    <mrow>
+                                        <mn>1</mn>
+                                        <mo>+</mo>
+                                        <mi>i</mi>
+                                        <mo stretchy="false">)</mo>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
+                                    </msup>
                                     <mo>-</mo>
-                                    <mi>J</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow> 
-                        </mrow>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                            <msup>
-                              <mrow>
+                                    <mn>1</mn>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                            <mi>n</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                <mi>Log</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>A</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>-</mo>
+                                <mi>Log</mi>
+                                <mo stretchy="false">(⁡</mo>
+                                <mi>A</mi>
+                                <mo>-</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>i</mi>
+                                <mo>×</mo>
+                                <mi>VP</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo stretchy="false">)</mo>
+                                </mrow>
+                                <mrow>
+                                <mi>Log</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
                                 <mn>1</mn>
                                 <mo>+</mo>
                                 <mi>i</mi>
                                 <mo stretchy="false">)</mo>
-                              </mrow>
-                              <mi>n</mi>
-                            </msup>
-                            <mo>-</mo>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>J</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                        
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-            </math><BR></BR>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                        <mi>C</mi>
-                        <sub>n</sub>
-                        <mo>=</mo>
-                        <mi>A</mi>
-                        <mo>*</mo>
-                        <mo stretchy="false">(</mo>
-                        <mi>1</mi>
-                        <mo>+</mo>
-                        <mn>J</mn>
-                        <mo stretchy="false">)</mo>
-                        <sup>n - 1</sup>
-                </mrow>
-            </math><BR></BR>
-            </p>
-            <h5>Formulas relacionadas con Gradiente Lineal Decreciente</h5>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VP</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <h3>Valor Futuro en Series Uniformes o Anualidad Anticipada:</h3>
+                        <p>
+                            En el ámbito financiero, se emplean las fórmulas relacionadas con el Valor Futuro en Series Uniformes o Anualidades Anticipadas para determinar el valor futuro de una serie de pagos iguales efectuados al inicio de cada período, suponiendo una tasa de interés constante. Cuando los pagos se realizan al principio de cada período en lugar de al final, estas fórmulas son útiles.
+                        </p>
+                        <h5>Formulas relacionadas con Valor Futuro en Series Uniformes o Anualidad Anticipada:</h5>
+                        <p>
+                            <p>
+                                <ul>
+                                    <li>VF = Valor Futuro</li>
+                                    <li>i = Tasa de interes</li>
+                                    <li>n = Numero de periodos</li>
+                                    <li>A = Pagos periodico</li>
+                                </ul>
+                            </p>
+                        </p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                            <mi>VF</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
                             <mo>×</mo>
                             <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
+                            <mn>1</mn>
+                            <mo>+</mo>
                             <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
+                            <mo stretchy="false">)</mo>
+                            <mo>×</mo>
+                            <mfrac>
+                                <mrow>
+                                <mo stretchy="false">(</mo>
                                 <msup>
-                                  <mrow>
+                                    <mrow>
                                     <mn>1</mn>
                                     <mo>+</mo>
                                     <mi>i</mi>
                                     <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
                                 </msup>
                                 <mo>-</mo>
                                 <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
+                                
+                                </mrow>
+                                <mrow>
+                                <mi>i</mi>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                            <mi>A</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                <mi>VF</mi>
+                                </mrow>
+                                <mrow>
+                                    <mo stretchy="false">[</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mo stretchy="false">(</mo>
+                                            <mn>1</mn>
+                                            <mo>+</mo>
+                                            <mi>i</mi>
+                                            <mo stretchy="false">)</mo>
+                                            <mo>×</mo>
+                                            <mo stretchy="false">(</mo>
+                                            <msup>
+                                            <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                            </mrow>
+                                            
+                                            <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                            
+                                        </mrow>
+                                        <mrow>
+                                            <mi>i</mi>
+                                        </mrow>
+                                    </mfrac>
+                                    <mo stretchy="false">]</mo>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <h5>Valor Presente en Series Uniformes o Anualidad Anticipada:</h5>
+                        <p>
+                            En finanzas, se utilizan las fórmulas del Valor Presente en Series Uniformes o Anualidades Anticipadas para calcular el valor presente de una serie de pagos iguales realizados al inicio de cada período, asumiendo una tasa de interés constante. Cuando los pagos se hacen al principio de cada período en lugar del final, estas fórmulas resultan útiles.
+                        </p>
+                        <h5>Formula relacionadas con Valor Presente en Series Uniformes o Anualidad Anticipada:</h5>
+                        <p>
+                            <ul>
+                                <li>VP = Valor Presente</li>
+                                <li>i = Tasa de interes</li>
+                                <li>n = Numero de periodos</li>
+                                <li>A = Pagos periodico</li>
+                            </ul>
+                        </p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                            <mi>VP</mi>
+                            <mo>=</mo>
+                            <mi>A</mi>
                             <mo>×</mo>
                             <mo stretchy="false">(</mo>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <mi>i</mi>
+                            <mo stretchy="false">)</mo>
+                            <mo>×</mo>
+                            <mfrac>
+                                <mrow>
+                                <mo stretchy="false">(</mo>
                                 <msup>
-                                  <mrow>
+                                    <mrow>
                                     <mn>1</mn>
                                     <mo>+</mo>
                                     <mi>i</mi>
                                     <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>n</mi>
-                        </mrow>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
-                                </msup>
-                        </mrow>
-                        
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>VF</mi>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow> 
-                                  <mi>n</mi>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
                                 </msup>
                                 <mo>-</mo>
                                 <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
+                                
+                                </mrow>
+                                <mrow>
+                                <mi>i</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">(</mo>
                                 <msup>
-                                  <mrow>
-                                  </mrow> 
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
+                                    <mrow>
                                     <mn>1</mn>
                                     <mo>+</mo>
                                     <mi>i</mi>
                                     <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  
-                                  <mi>n</mi>
+                                    </mrow>
+                                    
+                                    <mi>n</mi>
                                 </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>  
-                                </mrow>                       
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    <mo>-</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>n</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><br><br>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>A</mi>
-                    <mo>=</mo>
-                    <mo stretchy="false">(</mo>
-                    <mi>VF</mi>
-                    <mo>+</mo>
-                    <mfrac>
-                        <mrow>
-                            <mi>G</mi>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                        </mrow>
-                    </mfrac>
-                    <mo>×</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow> 
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>
-                                  </mrow> 
-                                </msup>
-                        </mrow>
-                        
-                    </mfrac>
-                    <mo>-</mo>
-                        <mrow>
-                            <mi>n</mi>
-                    <mo stretchy="false">]</mo>
-                    <mo stretchy="false">)</mo>
-                    <mo>/</mo>
-                    <mo stretchy="false">[</mo>
-                    <mfrac>
-                        <mrow>
-                            <mo stretchy="false">(</mo>
-                                <msup>
-                                  <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                  </mrow>
-                                  <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                        </mrow>
-                        <mrow>
-                            <mi>i</mi>
-                                <msup>
-                                  <mrow>  
-                                </mrow>                       
-                                </msup>
-                        </mrow>
-                    </mfrac>
-                    </mrow>
-                    </mfrac>
-                    <mo stretchy="false">]</mo>
-                </mrow>
-            </math><BR></BR>
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mrow>
-                    <mi>C</mi>
-                    <sub>n</sub>
-                    <mo>=</mo>
-                    <mi>A</mi>
-                    <mo>-</mo>
-                    <mo stretchy="false">(</mo>
-                    <mi>n</mi>
-                    <mo>-</mo>
-                    <mn>1</mn>
-                    <mo stretchy="false">)</mo>
-                    <mo>*</mo>
-                    <mi>G</mi>
-                </mrow>
-            </math><BR></BR>
-            </p>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+                                </mrow>
+                            </mfrac>
+                            </mrow>
+                        </math><br><br>
+                        <p>$$A = \frac{VP}{(1 + i) \times \frac{  \left( (1 + i)^n - 1 \right)}{i \times \left( (1 + i)^{n - 1} \right)} }$$</p>
+                    </p><br>
                 </div>
             </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Series Variables o Gradientes</h2>
+                    <p>Es una serie de flujos de caja (ingresos o egresos) periódicos que aumentan o disminuyen en términos monetarios ($) o en términos relativos (%), para saldar una deuda o para acumular un fondo de ahorro a corto, mediano, largo plazo o a perpetuidad. Se caracterizan por seguir una ley de formación, en donde un flujo de caja puede aumentar o disminuir con relación al flujo de caja anterior, en una cantidad constante monetaria ($) o relativa (%). Es una serie de pagos periódicos que pueden aumentar o disminuir con relación al pago
+                        anterior. A la variación en una cantidad constante en pesos, o en un porcentaje se le conoce como Gradiente.
+                        <h5>Formulas relacionadas con Gradiente Lineal Creciente</h5>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VP</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                        <mo>×</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                                <mo>+</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>G</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                        <mo>×</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>n</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                    
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VF</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow> 
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>
+                                              </mrow> 
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                                <mo>+</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>G</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>  
+                                            </mrow>                       
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>n</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>A</mi>
+                                <mo>=</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>VF</mi>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>G</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow> 
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>
+                                              </mrow> 
+                                            </msup>
+                                    </mrow>
+                                    
+                                </mfrac>
+                                <mo>-</mo>
+                                    <mrow>
+                                        <mi>n</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo stretchy="false">)</mo>
+                                <mo>/</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>  
+                                            </mrow>                       
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><BR></BR>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>C</mi>
+                                <sub>n</sub>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>+</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>n</mi>
+                                <mo>-</mo>
+                                <mn>1</mn>
+                                <mo stretchy="false">)</mo>
+                                <mo>*</mo>
+                                <mi>G</mi>
+                            </mrow>
+                        </math><BR></BR>
+                        </p>
+                        <h5>Formulas relacionadas con Gradiente Lineal Decreciente</h5>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VP</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                        <mo>×</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>G</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                        <mo>×</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>n</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VF</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow> 
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>
+                                              </mrow> 
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>G</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>  
+                                            </mrow>                       
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>n</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>A</mi>
+                                <mo>=</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>VF</mi>
+                                <mo>+</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>G</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow> 
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>
+                                              </mrow> 
+                                            </msup>
+                                    </mrow>
+                                    
+                                </mfrac>
+                                <mo>-</mo>
+                                    <mrow>
+                                        <mi>n</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo stretchy="false">)</mo>
+                                <mo>/</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>i</mi>
+                                            <msup>
+                                              <mrow>  
+                                            </mrow>                       
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                </mrow>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><BR></BR>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>C</mi>
+                                <sub>n</sub>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>-</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>n</mi>
+                                <mo>-</mo>
+                                <mn>1</mn>
+                                <mo stretchy="false">)</mo>
+                                <mo>*</mo>
+                                <mi>G</mi>
+                            </mrow>
+                        </math><BR></BR>
+                        <h5>Formulas relacionadas con Gradiente Geometrico Creciente</h5>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VP</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>J</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mi>J</mi>
+                                        <mo>-</mo>
+                                        <mi>i</mi>
+                                        <mo stretchy="false">)</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VF</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>J</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mi>i</mi>
+                                        <mo>-</mo>
+                                        <mi>J</mi>
+                                        <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>A</mi>
+                                <mo>=</mo>
+                                <mi>VF</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                              <mrow>
+                                                <mn>i</mn>
+                                                <mo>-</mo>
+                                                <mi>J</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow> 
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <msup>
+                                          <mrow>
+                                            <mn>1</mn>
+                                            <mo>+</mo>
+                                            <mi>i</mi>
+                                            <mo stretchy="false">)</mo>
+                                          </mrow>
+                                          <mi>n</mi>
+                                        </msup>
+                                        <mo>-</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>J</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                        </math><BR></BR>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                    <mi>C</mi>
+                                    <sub>n</sub>
+                                    <mo>=</mo>
+                                    <mi>A</mi>
+                                    <mo>*</mo>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>1</mi>
+                                    <mo>+</mo>
+                                    <mn>J</mn>
+                                    <mo stretchy="false">)</mo>
+                                    <sup>n - 1</sup>
+                            </mrow>
+                        </math><BR></BR>
+                        <h5>Formulas relacionadas con Gradiente Geometrico Decreciente</h5>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VP</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>J</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mi>J</mi>
+                                        <mo>+</mo>
+                                        <mi>i</mi>
+                                        <mo stretchy="false">)</mo>
+                                        <mo>×</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>VF</mi>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow> 
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>-</mo>
+                                                <mi>J</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mi>J</mi>
+                                        <mo>+</mo>
+                                        <mi>i</mi>
+                                        <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>A</mi>
+                                <mo>=</mo>
+                                <mi>Vp</mi>
+                                <mo>×</mo>
+                                <mo stretchy="false">[</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mi>J</mi>
+                                        <mo>+</mo>
+                                        <mi>i</mi>
+                                        <mo stretchy="false">)</mo>
+                                        <mo>×</mo>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                            <mo>-</mo>
+                                            <mo stretchy="false">(</mo>
+                                            <msup>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo>-</mo>
+                                                <mi>J</mi>
+                                                <mo stretchy="false">)</mo>
+                                              </mrow>
+                                              
+                                              <mi>n</mi>
+                                            </msup>
+                                    </mrow>
+                                </mfrac>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                        </math><br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                    <mi>C</mi>
+                                    <sub>n</sub>
+                                    <mo>=</mo>
+                                    <mi>A</mi>
+                                    <mo>*</mo>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>1</mi>
+                                    <mo>-</mo>
+                                    <mn>J</mn>
+                                    <mo stretchy="false">)</mo>
+                                    <sup>n - 1</sup>
+                            </mrow>
+                        </math><BR></BR>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -1562,8 +1423,62 @@
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Evaluación de Alternativas de Inversión</h2>
+                    <p>La evaluación puede considerarse como aquel ejercicio teórico mediante el cual
+                        se intentan identificar, valorar y comparar entre sí los costos y beneficios
+                        asociados a determinadas alternativas de proyecto con la finalidad de coadyuvar
+                        a decidir la más conveniente.
+                    </p>
+                    <p>La evaluación financiera de proyectos de inversión es el proceso de analizar y valorar las oportunidades de inversión para determinar su viabilidad y rentabilidad. Este proceso implica una serie de pasos y herramientas analíticas que ayudan a los inversores, gerentes y otras partes interesadas a tomar decisiones informadas sobre si deben o no invertir en un proyecto particular.
+                    </p>
+                    <p><b> Inversion: </b> El concepto inversión, aplica cuando dicha persona presta o
+                            toma dinero en efectivo de una tercera persona ó cuando una
+                            empresa invierte en un proyecto (decisión financiera) como dar
+                            crédito a los clientes o a los empleados. También aplica cuando
+                            una persona realiza inversiones temporales (acciones, ahorros)
+                            o cuando negocia con proveedores el pago anticipado al
+                            vencimiento de una factura.
+                    </p><br>
+                    <h3>VPN: Valor Presente Neto</h3>
+                    <p>
+                        El Valor Presente Neto (VPN) o Valor Actual Neto (VAN) se define como la suma del valor presente de los flujos de efectivo individuales. Nos permite determinar si una inversión o un proyecto es viable.
+                        Se trata de restar el valor presente de los flujos esperados en varios períodos futuros de la cantidad inicialmente invertida. Obtendremos una previsión incluso a medio-largo plazo de esta manera.
+                    </p>
+                    <p>
+                        \[ VPN = -VP(Egresos) + \sum VP(Ingresos) \]
+                    </p>
+                    <p>
+                        Es la fórmula financiera que permite saber cuanto se puede llegar a ganar o perder en algúnos momentos dados, si se decide hacer una inversión durante un tiempo y a un costo de oportunidad estimado.
+                    </p>
+                    <p>
+                        <b>Tasa Interna de Oportunidad:</b> Una tasa de interés que sirva como
+                        referencia para saber si invierte o no. Se
+                        conoce como tasa interna de oportunidad(T.O)
+                        del inversionista.
+                    </p>
+                    <p>
+                        $$VPN_{T.O} = -P + \frac{FNE_1}{(1 + T.O)^1} + \frac{FNE_2}{(1 + T.O)^2} + \cdots + \frac{FNE_n}{(1 + T.O)^n}$$
+                    </p>
+                    <h3>TIR: Tasa Interna de Retorno</h3>
+                    <p>
+                        La TIR, también conocida como Tasa Interna de Retorno, se emplea para evaluar la rentabilidad de una inversión. Expresa la tasa de descuento que hace que el valor presente neto (VPN) de los flujos de efectivo futuros de una inversión sea igual a su costo inicial. En resumen, la TIR es el interés al cual el valor presente de los ingresos esperados de una inversión coincide con el valor presente de sus costos.
+                    </p>
+                    <p>
+                        La TIR sirve para medir la rentabilidad de proyectos o inversiones, por lo tanto, a mayor TIR mayor será la rentabilidad. Calcular la tasa interna de rentabilidad de distintos proyectos facilita tomar decisiones sobre las inversiones a realizar.
+                    </p>
+                    <p>
+                        $$VPN = 0 = -Inversion + \frac{FNE_1}{(1 + TIR)^1} + \frac{FNE_2}{(1 + TIR)^2} + \cdots + \frac{FNE_n}{(1 + TIR)^n}$$
+                    </p><br>
+                    <h3>Relacion Costo / Beneficio</h3>
+                    <p>
+                        Relación de costo-beneficio: Describe la relación global entre los costos y beneficios a lo largo de un período específico. Esencialmente, es el total del beneficio propuesto en efectivo dividido por el total de costos propuestos en efectivo. Para que el cálculo sea más dinámico, debes calcular el valor actual neto de los costos y beneficios a lo largo del ciclo de vida planificado para tu proyecto. Cuando la relación de beneficio-costo es mayor que uno, indica que los beneficios exceden a los costos.
+                    </p>
+                    <p>
+                        $$B/C = \frac{\sum Beneficios}{Costo}$$
+                    </p><br>
+                    <p>
+                        <b>PayBack: </b>El PayBack, conocido también como "periodo de recuperación" o "periodo de retorno", se emplea en el análisis financiero para determinar cuánto tiempo tomará a una inversión recobrar su costo inicial. En resumen, el PayBack representa la cantidad de tiempo que se requiere para recuperar la inversión inicial con los flujos de efectivo generados.
+                    </p>
                 </div>
                 <ul class="timeline">
                     <li>
