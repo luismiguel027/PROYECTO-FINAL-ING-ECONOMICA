@@ -21,10 +21,6 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services">Series Uniformes</a></li>
@@ -62,102 +58,15 @@
                                 <li>A = Pagos periodico</li>
                             </ul>
                         </p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>VF</mi>
-                            <mo>=</mo>
-                            <mi>A</mi>
-                            <mo>×</mo>
-                            <mfrac>
-                                <mrow>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                    <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                
-                                </mrow>
-                                <mrow>
-                                <mi>i</mi>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>A</mi>
-                            <mo>=</mo>
-                            <mfrac>
-                                <mrow>
-                                <mi>FV</mi>
-                                </mrow>
-                                <mrow>
-                                    <mfrac>
-                                        <mrow>
-                                            <mo stretchy="false">(</mo>
-                                            <msup>
-                                            <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                            </mrow>
-                                            
-                                            <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                            
-                                        </mrow>
-                                        <mrow>
-                                            <mi>i</mi>
-                                        </mrow>
-                                    </mfrac>
-                                
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>n</mi>
-                            <mo>=</mo>
-                            <mfrac>
-                                <mrow>
-                                <mi>Log</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi>VF</mi>
-                                <mo>×</mo>
-                                <mi>i</mi>
-                                <mo>+</mo>
-                                <mi>A</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>-</mo>
-                                <mi>Log</mi>
-                                <mo stretchy="false">(⁡</mo>
-                                <mi>A</mi>
-                                <mo stretchy="false">)</mo>
-                                </mrow>
-                                <mrow>
-                                <mi>Log</mi>
-                                <mo>⁡</mo>
-                                <mo stretchy="false">(</mo>
-                                <mn>1</mn>
-                                <mo>+</mo>
-                                <mi>i</mi>
-                                <mo stretchy="false">)</mo>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math> <br><br>
+                        <p>
+                            $$\text{VF} = A \frac{(1+i)^n - 1}{i}$$
+                        </p><br>
+                        <p>
+                            $$A = \frac{\text{FV}}{\frac{(1+i)^n - 1}{i}}$$
+                        </p><br>
+                        <p>
+                            $$n = \frac{\log(\text{VF} \cdot i + A) - \log(A)}{\log(1 + i)}$$
+                        </p> <br>
                         <h3>Valor Presente en Series Uniformes o Anualidad Vencida:</h3>
                         <p>
                             En finanzas, se utilizan fórmulas relacionadas con el Valor Presente en Series Uniformes o Anualidades Vencidas para calcular el valor presente de una serie de pagos iguales realizados al final de cada período, asumiendo una tasa de interés constante. Estas fórmulas sirven para calcular el valor actual de una corriente de pagos futuros.
@@ -171,122 +80,15 @@
                                 <li>A = Pagos periodico</li>
                             </ul>
                         </p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>VP</mi>
-                            <mo>=</mo>
-                            <mi>A</mi>
-                            <mo>×</mo>
-                            <mfrac>
-                                <mrow>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                    <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                
-                                </mrow>
-                                <mrow>
-                                <mi>i</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                    <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                </msup>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML"> 
-                            <mrow>
-                            <mi>A</mi>
-                            <mo>=</mo>
-                            <mi>VP</mi>
-                            <mo>×</mo>
-                            <mfrac>
-                                <mrow>
-                                    <mi>i</mi>
-                                    <mo>×</mo>
-                                    <mo stretchy="false">(</mo>
-                                    <msup>
-                                    <mrow>
-                                        <mn>1</mn>
-                                        <mo>+</mo>
-                                        <mi>i</mi>
-                                        <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                    </msup>
-                                </mrow>
-                                <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <msup>
-                                    <mrow>
-                                        <mn>1</mn>
-                                        <mo>+</mo>
-                                        <mi>i</mi>
-                                        <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                    </msup>
-                                    <mo>-</mo>
-                                    <mn>1</mn>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>n</mi>
-                            <mo>=</mo>
-                            <mfrac>
-                                <mrow>
-                                <mi>Log</mi>
-                                <mo>⁡</mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>A</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>-</mo>
-                                <mi>Log</mi>
-                                <mo stretchy="false">(⁡</mo>
-                                <mi>A</mi>
-                                <mo>-</mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>i</mi>
-                                <mo>×</mo>
-                                <mi>VP</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo stretchy="false">)</mo>
-                                </mrow>
-                                <mrow>
-                                <mi>Log</mi>
-                                <mo>⁡</mo>
-                                <mo stretchy="false">(</mo>
-                                <mn>1</mn>
-                                <mo>+</mo>
-                                <mi>i</mi>
-                                <mo stretchy="false">)</mo>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
+                        <p>
+                            $$VP = A \times \frac{(1+i)^n - 1}{i \times (1+i)^n}$$
+                        </p><br>
+                        <p>
+                            $$A = VP \times \frac{i \times (1+i)^n}{(1+i)^n - 1}$$
+                        </p><br>
+                        <p>
+                            $$n = \frac{\log(A) - \log\left(A - (i \times VP)\right)}{\log(1 + i)}$$
+                        </p><br>
                         <h3>Valor Futuro en Series Uniformes o Anualidad Anticipada:</h3>
                         <p>
                             En el ámbito financiero, se emplean las fórmulas relacionadas con el Valor Futuro en Series Uniformes o Anualidades Anticipadas para determinar el valor futuro de una serie de pagos iguales efectuados al inicio de cada período, suponiendo una tasa de interés constante. Cuando los pagos se realizan al principio de cada período en lugar de al final, estas fórmulas son útiles.
@@ -302,83 +104,12 @@
                                 </ul>
                             </p>
                         </p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>VF</mi>
-                            <mo>=</mo>
-                            <mi>A</mi>
-                            <mo>×</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>1</mn>
-                            <mo>+</mo>
-                            <mi>i</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>×</mo>
-                            <mfrac>
-                                <mrow>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                    <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                
-                                </mrow>
-                                <mrow>
-                                <mi>i</mi>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>A</mi>
-                            <mo>=</mo>
-                            <mfrac>
-                                <mrow>
-                                <mi>VF</mi>
-                                </mrow>
-                                <mrow>
-                                    <mo stretchy="false">[</mo>
-                                    <mfrac>
-                                        <mrow>
-                                            <mo stretchy="false">(</mo>
-                                            <mn>1</mn>
-                                            <mo>+</mo>
-                                            <mi>i</mi>
-                                            <mo stretchy="false">)</mo>
-                                            <mo>×</mo>
-                                            <mo stretchy="false">(</mo>
-                                            <msup>
-                                            <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                            </mrow>
-                                            
-                                            <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                            
-                                        </mrow>
-                                        <mrow>
-                                            <mi>i</mi>
-                                        </mrow>
-                                    </mfrac>
-                                    <mo stretchy="false">]</mo>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
+                        <p>
+                            $$VF = A \times (1 + i) \times \frac{(1 + i)^n - 1}{i}$$
+                        </p><br><br>
+                        <p>
+                            $$A = \frac{VF}{\left[\frac{(1 + i) \times (1 + i)^n - 1}{i}\right]}$$
+                        </p><br><br>
                         <h5>Valor Presente en Series Uniformes o Anualidad Anticipada:</h5>
                         <p>
                             En finanzas, se utilizan las fórmulas del Valor Presente en Series Uniformes o Anualidades Anticipadas para calcular el valor presente de una serie de pagos iguales realizados al inicio de cada período, asumiendo una tasa de interés constante. Cuando los pagos se hacen al principio de cada período en lugar del final, estas fórmulas resultan útiles.
@@ -392,54 +123,10 @@
                                 <li>A = Pagos periodico</li>
                             </ul>
                         </p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                            <mi>VP</mi>
-                            <mo>=</mo>
-                            <mi>A</mi>
-                            <mo>×</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>1</mn>
-                            <mo>+</mo>
-                            <mi>i</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>×</mo>
-                            <mfrac>
-                                <mrow>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                    <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                </msup>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                
-                                </mrow>
-                                <mrow>
-                                <mi>i</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                    <mrow>
-                                    <mn>1</mn>
-                                    <mo>+</mo>
-                                    <mi>i</mi>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    
-                                    <mi>n</mi>
-                                </msup>
-                                </mrow>
-                            </mfrac>
-                            </mrow>
-                        </math><br><br>
-                        <p>$$A = \frac{VP}{(1 + i) \times \frac{  \left( (1 + i)^n - 1 \right)}{i \times \left( (1 + i)^{n - 1} \right)} }$$</p>
+                        <p>
+                            $$VP = A \times (1 + i) \times \frac{(1 + i)^n - 1}{i \times (1 + i)^n}$$
+                        </p><br><br>
+                        <p>$$A = \frac{VP}{(1 + i) \times    \frac{  \left( (1 + i)^n - 1 \right)}{i \times \left( (1 + i)^{n - 1} \right)} }$$</p>
                     </p><br>
                 </div>
             </div>
@@ -451,765 +138,106 @@
                     <h2 class="section-heading text-uppercase">Series Variables o Gradientes</h2>
                     <p>Es una serie de flujos de caja (ingresos o egresos) periódicos que aumentan o disminuyen en términos monetarios ($) o en términos relativos (%), para saldar una deuda o para acumular un fondo de ahorro a corto, mediano, largo plazo o a perpetuidad. Se caracterizan por seguir una ley de formación, en donde un flujo de caja puede aumentar o disminuir con relación al flujo de caja anterior, en una cantidad constante monetaria ($) o relativa (%). Es una serie de pagos periódicos que pueden aumentar o disminuir con relación al pago
                         anterior. A la variación en una cantidad constante en pesos, o en un porcentaje se le conoce como Gradiente.
+                        <h3>Gradiente Lineal Creciente</h3>
+                        <p>
+                            Las fórmulas relacionadas con el gradiente lineal creciente se utilizan en ingeniería económica y en la evaluación de proyectos de inversión para analizar flujos de efectivo que cambian de manera sistemática a lo largo del tiempo. Un gradiente lineal creciente se refiere a una serie de pagos o ingresos que aumentan en una cantidad($) constante en cada período.
+                        </p>
                         <h5>Formulas relacionadas con Gradiente Lineal Creciente</h5>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>VP</mi>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                        <mo>×</mo>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                                <mo>+</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>G</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                        <mo>×</mo>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo>-</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>n</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                    
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>VF</mi>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow> 
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>
-                                              </mrow> 
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                                <mo>+</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>G</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>  
-                                            </mrow>                       
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo>-</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>n</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>A</mi>
-                                <mo>=</mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>VF</mi>
-                                <mo>-</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>G</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow> 
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>
-                                              </mrow> 
-                                            </msup>
-                                    </mrow>
-                                    
-                                </mfrac>
-                                <mo>-</mo>
-                                    <mrow>
-                                        <mi>n</mi>
-                                <mo stretchy="false">]</mo>
-                                <mo stretchy="false">)</mo>
-                                <mo>/</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>  
-                                            </mrow>                       
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><BR></BR>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>C</mi>
-                                <sub>n</sub>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>+</mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>n</mi>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>*</mo>
-                                <mi>G</mi>
-                            </mrow>
-                        </math><BR></BR>
+                        <p>
+                            <ul>
+                                <li>VP = Valor Presente</li>
+                                <li>VF = Valor Futuro</li>
+                                <li>A = Valor de la primera cuota</li>
+                                <li>G($) = Gradiente constante</li>
+                                <li>n = Numero de periodos</li>
+                                <li>i = Tasa de interes</li>
+                            </ul>
+                        </p>
+                        <p>
+                            $$ VP = A \times \left[ \frac{(1 + i)^n - 1}{i \times (1 + i)^n} \right] + \frac{G}{i} \times \left[ \frac{(1 + i)^n - 1}{i \times (1 + i)^n} \right] - \frac{n}{(1 + i)^n} $$
+                        </p><br><br>
+                        <p>
+                            $$VF = A \times \left[ \frac{(1 + i)^n - 1}{i} \right] + \frac{G}{i} \times  [ \frac{(1 + i)^n - 1}{i}  - n ]$$
+                        </p><br><br>
+                        <p>
+                            $$A =  \frac{ VF - \frac{G}{i} \times \left[ \frac{(1 + i)^n - 1}{i} - n \right] } { [ \frac{(1 + i)^n - 1}{i} ]}$$
+                        </p><BR></BR>
+                        <p>
+                            $$C_n = A + (n-1) \times G$$
+                        </p><BR></BR>
+                        </p>
+                        <h3>Gradiente Lineal Decreciente</h3>
+                        <p>
+                            Las fórmulas relacionadas con el gradiente lineal decreciente se utilizan en ingeniería económica y en la evaluación de proyectos de inversión para analizar flujos de efectivo que disminuyen de manera sistemática a lo largo del tiempo. Un gradiente lineal decreciente se refiere a una serie de pagos o ingresos que disminuyen en una cantidad($) constante en cada período.
                         </p>
                         <h5>Formulas relacionadas con Gradiente Lineal Decreciente</h5>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>VP</mi>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                        <mo>×</mo>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                                <mo>-</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>G</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                        <mo>×</mo>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo>-</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>n</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>VF</mi>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow> 
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>
-                                              </mrow> 
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                                <mo>-</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>G</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>  
-                                            </mrow>                       
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo>-</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>n</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>A</mi>
-                                <mo>=</mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>VF</mi>
-                                <mo>+</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>G</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                    </mrow>
-                                </mfrac>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow> 
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>
-                                              </mrow> 
-                                            </msup>
-                                    </mrow>
-                                    
-                                </mfrac>
-                                <mo>-</mo>
-                                    <mrow>
-                                        <mi>n</mi>
-                                <mo stretchy="false">]</mo>
-                                <mo stretchy="false">)</mo>
-                                <mo>/</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mn>1</mn>
-                                    </mrow>
-                                    <mrow>
-                                        <mi>i</mi>
-                                            <msup>
-                                              <mrow>  
-                                            </mrow>                       
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                </mrow>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><BR></BR>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>C</mi>
-                                <sub>n</sub>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>-</mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>n</mi>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>*</mo>
-                                <mi>G</mi>
-                            </mrow>
-                        </math><BR></BR>
+                        <p>
+                            <ul>
+                                <li>VP = Valor Presente</li>
+                                <li>VF = Valor Futuro</li>
+                                <li>A = Valor de la primera cuota</li>
+                                <li>G($) = Gradiente constante</li>
+                                <li>n = Numero de periodos</li>
+                                <li>i = Tasa de interes</li>
+                            </ul>
+                        </p>
+                        <p>
+                            $$Vp = A \left[ \frac{(1 + i)^n - 1}{i (1 + i)^n} \right] - \frac{G}{i} \left[ \frac{(1 + i)^n - 1}{i (1 + i)^n} - \frac{n}{(1 + i)^n} \right]$$
+                        </p><br><br>
+                        <p>
+                            $$VF = A \left[ \frac{(1 + i)^n - 1}{i} \right] - \frac{G}{i} \left[ \frac{(1 + i)^n - 1}{i} - n \right]$$
+                        </p><br><br>
+                        <p>
+                            $$A =  \frac{ VF + \frac{G}{i} \times \left[ \frac{(1 + i)^n - 1}{i} - n \right] } { [ \frac{(1 + i)^n - 1}{i} ]}$$
+                        </p><BR></BR>
+                        <p>
+                            $$C_n = A - (n-1) \times G$$
+                        </p><BR></BR>
+                        <h3>Gradiente Geometrico Creciente</h3>
+                        <p>
+                            Las fórmulas relacionadas con el gradiente geométrico creciente se utilizan en finanzas, ingeniería económica y en la evaluación de proyectos de inversión para analizar flujos de efectivo que aumentan de manera geométrica a lo largo del tiempo. Un gradiente geométrico creciente se refiere a una serie de pagos o ingresos que aumentan en un porcentaje(%) constante en cada período.
+                        </p>
                         <h5>Formulas relacionadas con Gradiente Geometrico Creciente</h5>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>VP</mi>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>J</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                        <mi>J</mi>
-                                        <mo>-</mo>
-                                        <mi>i</mi>
-                                        <mo stretchy="false">)</mo>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>VF</mi>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>J</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                        <mi>i</mi>
-                                        <mo>-</mo>
-                                        <mi>J</mi>
-                                        <mo stretchy="false">)</mo>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><br><br>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>A</mi>
-                                <mo>=</mo>
-                                <mi>VF</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                              <mrow>
-                                                <mn>i</mn>
-                                                <mo>-</mo>
-                                                <mi>J</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow> 
-                                    </mrow>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                        <msup>
-                                          <mrow>
-                                            <mn>1</mn>
-                                            <mo>+</mo>
-                                            <mi>i</mi>
-                                            <mo stretchy="false">)</mo>
-                                          </mrow>
-                                          <mi>n</mi>
-                                        </msup>
-                                        <mo>-</mo>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>J</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                        </math><BR></BR>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                    <mi>C</mi>
-                                    <sub>n</sub>
-                                    <mo>=</mo>
-                                    <mi>A</mi>
-                                    <mo>*</mo>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>1</mi>
-                                    <mo>+</mo>
-                                    <mn>J</mn>
-                                    <mo stretchy="false">)</mo>
-                                    <sup>n - 1</sup>
-                            </mrow>
-                        </math><BR></BR>
+                        <p>
+                            <ul>
+                                <li>VP = Valor Presente</li>
+                                <li>VF = Valor Futuro</li>
+                                <li>A = Valor de la primera cuota</li>
+                                <li>J(%) = Gradiente constante</li>
+                                <li>n = Numero de periodos</li>
+                                <li>i = Tasa de interes</li>
+                            </ul>
+                        </p>
+                        <p>
+                            $$VP = A \times \left[ \frac{(1 + J)^n - (1 + i)^n}{(J - i)(1 + i)^n} \right]$$
+                        </p><br><br>
+                        <p>
+                            $$VF = A \times \left[ \frac{(1 + i)^n - (1 + J)^n}{(i - J)} \right]$$
+                        </p><br><br>
+                        <p>
+                            $$A = VF \times \left[ \frac{i - J}{(1 + i)^n - (1 + J)^n} \right]$$
+                        </p><BR></BR>
+                        <p>
+                            $$C_n = A \times (1 + J)^{n - 1}$$
+                        </p><BR></BR>
+                        <h3>Gradiente Geometrico Decreciente</h3>
+                        <p>
+                            Las fórmulas relacionadas con el gradiente geométrico decreciente se utilizan en finanzas, ingeniería económica y en la evaluación de proyectos de inversión para analizar flujos de efectivo que disminuyen de manera geométrica a lo largo del tiempo. Un gradiente geométrico decreciente se refiere a una serie de pagos o ingresos que disminuyen en una proporción constante en cada período.
+                        </p>
                         <h5>Formulas relacionadas con Gradiente Geometrico Decreciente</h5>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow>
-                                <mi>VP</mi>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>×</mo>
-                                <mo stretchy="false">[</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                            <mo>-</mo>
-                                            <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>J</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                        <mi>J</mi>
-                                        <mo>+</mo>
-                                        <mi>i</mi>
-                                        <mo stretchy="false">)</mo>
-                                        <mo>×</mo>
-                                        <mo stretchy="false">(</mo>
-                                            <msup>
-                                              <mrow>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>i</mi>
-                                                <mo stretchy="false">)</mo>
-                                              </mrow>
-                                              
-                                              <mi>n</mi>
-                                            </msup>
-                                    </mrow>
-                                </mfrac>
-                                <mo stretchy="false">]</mo>
-                            </mrow>
-                        </math><br><br>
+                        <p>
+                            <ul>
+                                <li>VP = Valor Presente</li>
+                                <li>VF = Valor Futuro</li>
+                                <li>A = Valor de la primera cuota</li>
+                                <li>J(%) = Gradiente constante</li>
+                                <li>n = Numero de periodos</li>
+                                <li>i = Tasa de interes</li>
+                            </ul>
+                        </p>
+                        <p>
+                            $$VP = A \times \left[ \frac{(1 + i)^n - (1 + J)^n}{(J + i)(1 + i)^n} \right]$$
+                        </p><br><br>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <mrow>
                                 <mi>VF</mi>
@@ -1324,98 +352,6 @@
                                     <sup>n - 1</sup>
                             </mrow>
                         </math><BR></BR>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
